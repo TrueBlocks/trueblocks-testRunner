@@ -1,11 +1,11 @@
-module github.com/TrueBlocks/trueblocks-core/testRunner/v6
+module github.com/TrueBlocks/trueblocks-testRunner/v6
 
 // Go Version
 go 1.25.1
 
 require (
-	github.com/TrueBlocks/trueblocks-core/src/apps/chifra/v6 v6.0.0-20251101173714-c1fe7b7f4f9b
-	github.com/TrueBlocks/trueblocks-sdk/v6 v6.1.0
+	github.com/TrueBlocks/trueblocks-chifra/v6 v6.4.5
+	github.com/TrueBlocks/trueblocks-sdk/v6 v6.4.5
 )
 
 require (

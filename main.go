@@ -337,11 +337,11 @@ func getRepoRoot() string {
 }
 
 func getCasesPath() string {
-	return filepath.Join(getRepoRoot(), "src/dev_tools/testRunner/testCases")
+	return filepath.Join(getRepoRoot(), "dev-tools/testRunner/testCases")
 }
 
 func getGeneratedPath() string {
-	return filepath.Join(getRepoRoot(), "src/dev_tools/testRunner/generated")
+	return filepath.Join(getRepoRoot(), "dev-tools/testRunner/generated")
 }
 
 func getWorkingPath() string {

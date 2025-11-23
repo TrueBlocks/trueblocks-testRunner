@@ -92,6 +92,12 @@ on     , both, fast , export  , apps, acctExport, export_approvals_csv   , n   ,
 on     , both, fast , export  , apps, acctExport, export_wo_emitter      , y   , addrs = trueblocks.eth & approvals & max_records = 30 & cache & fmt = json
 on     , both, fast , export  , apps, acctExport, export_with_emitter    , y   , addrs = trueblocks.eth & approvals & max_records = 30 & cache & emitter = 0x6b175474e89094c44da98b954eedeac495271d0f & fmt = json
 
+on     , both, fast , export  , apps, acctExport, export_approvals_logs  , y   , addrs = trueblocks.eth & approvals & logs & max_records = 3 & fmt = json & cache
+off    , both, fast , export  , apps, acctExport, export_approvals_art_logs, y   , addrs = trueblocks.eth & approvals & logs & articulate & max_records = 3 & fmt = json
+on     , both, fast , export  , apps, acctExport, export_approvals_csv_logs, n   , addrs = trueblocks.eth & approvals & logs & max_records = 3 & fmt = csv
+on     , both, fast , export  , apps, acctExport, export_wo_emitter_logs , y   , addrs = trueblocks.eth & approvals & logs & max_records = 30 & cache & fmt = json
+on     , both, fast , export  , apps, acctExport, export_with_emitter_logs, y   , addrs = trueblocks.eth & approvals & logs & max_records = 30 & cache & emitter = 0x6b175474e89094c44da98b954eedeac495271d0f & fmt = json
+
 on     , both, fast , export  , apps, acctExport, not_nfts               , y   , addrs = trueblocks.eth & logs & articulate & first_block = 8876230 & last_block = 9024186 & fmt = json
 on     , both, fast , export  , apps, acctExport, nfts                   , y   , addrs = trueblocks.eth & logs & articulate & nfts & first_block = 8876230 & last_block = 9024186 & fmt = json
 on     , both, fast , export  , apps, acctExport, nfts_fail              , y   , addrs = trueblocks.eth & nfts & articulate & first_block = 8876230 & last_block = 9024186 & fmt = json
